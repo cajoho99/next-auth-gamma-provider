@@ -4,7 +4,9 @@
   "description": "Next auth provider for gamma",
   "main": "index.js",
   "types": "lib/index.d.ts",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "prepublish": "tsc"
   },
@@ -12,7 +14,12 @@
     "type": "git",
     "url": "git+https://github.com/cajoho99/next-auth-gamma-provider.git"
   },
-  "keywords": ["typescript", "gamma", "next", "next-auth"],
+  "keywords": [
+    "typescript",
+    "gamma",
+    "next",
+    "next-auth"
+  ],
   "author": "Carl Holmberg",
   "license": "ISC",
   "bugs": {
@@ -20,6 +27,11 @@
   },
   "homepage": "https://github.com/cajoho99/next-auth-gamma-provider#readme",
   "dependencies": {
+    "@types/next": "^9.0.0",
+    "@types/nodemailer": "^6.4.5",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "next": "^12.2.5",
     "next-auth": "^4.10.3"
   },
   "devDependencies": {
