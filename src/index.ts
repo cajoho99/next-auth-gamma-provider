@@ -1,7 +1,7 @@
 import { OAuthConfig, OAuthUserConfig } from "next-auth/providers";
 import { URLSearchParams } from "url";
 
-const GammaProvider = (options: OAuthUserConfig<any>) => {
+export const GammaProvider = (options: OAuthUserConfig<any>) => {
   return {
     id: "gamma",
     name: "Gamma",
@@ -63,5 +63,3 @@ const GammaProvider = (options: OAuthUserConfig<any>) => {
     clientSecret: options.clientSecret,
   } as OAuthConfig<any>;
 };
-
-export default GammaProvider;

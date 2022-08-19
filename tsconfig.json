@@ -1,26 +1,12 @@
-
 {
   "compilerOptions": {
-    "target": "es2015",                         
-    "module": "esnext",                    
-    "lib": [
-      "dom",
-      "es2015",
-      "es2015.collection"],                             
-    "declaration": true,                   
-    "declarationMap": true,                
-    "sourceMap": true,                     
-    "outDir": "lib",                       
-    "strict": false,                          
-    "moduleResolution": "node",           
-    "esModuleInterop": true,                  
-    "forceConsistentCasingInFileNames": true,  
+    "target": "es6",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./lib",
+    "strict": true,
+    "esModuleInterop": true
   },
-  "include": [
-    "src/**/*.ts",
-  ],
-  "exclude": [
-    "node_modules",
-    "lib"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/*"]
 }

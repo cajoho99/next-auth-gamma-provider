@@ -1,14 +1,15 @@
 {
-  "name": "@cthit/next-auth-gamma-provider",
+  "name": "next-auth-gamma-provider",
   "version": "1.0.0",
   "description": "Next auth provider for gamma",
   "main": "index.js",
   "types": "lib/index.d.ts",
   "files": [
-    "lib"
+    "lib/**/*"
   ],
   "scripts": {
-    "prepublish": "tsc"
+    "prepublish": "tsc",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -26,16 +27,17 @@
     "url": "https://github.com/cajoho99/next-auth-gamma-provider/issues"
   },
   "homepage": "https://github.com/cajoho99/next-auth-gamma-provider#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
   "dependencies": {
-    "@types/next": "^9.0.0",
+    "@types/cookie": "^0.5.1",
+    "@types/node": "^18.7.6",
     "@types/nodemailer": "^6.4.5",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "next": "^12.2.5",
-    "next-auth": "^4.10.3"
-  },
-  "devDependencies": {
-    "@types/node": "^18.7.6",
-    "typescript": "^4.7.4"
+    "next-auth": "^4.10.3",
+    "nodemailer": "^6.7.8"
   }
 }
