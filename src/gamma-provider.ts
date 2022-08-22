@@ -56,7 +56,7 @@ export const GammaProvider = (options: OAuthUserConfig<any>) => {
         // så lite oklart hur den funkar om man skulle byta namn
         name: profile.firstName + " " + profile.lastName,
         email: profile.email,
-        image: profile.picture,
+        image: profile.avatarUrl,
       };
     },
     clientId: options.clientId,
